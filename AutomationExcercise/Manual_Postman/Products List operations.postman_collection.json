@@ -1,0 +1,479 @@
+{
+	"info": {
+		"_postman_id": "d9df9a43-dc91-468b-9514-6cabb6bb883b",
+		"name": "Products List operations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38979094"
+	},
+	"item": [
+		{
+			"name": "All Products List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "To all Products List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/productsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Brands List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/brandsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Brands List",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/brandsList",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "tshirt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "search_product",
+							"value": "top",
+							"description": "searching a product based on a specific clothing item type",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product without search_product parameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/searchProduct",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Login",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify login with invalid details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "gugublabla@yahoo.com",
+							"description": "inserting email",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "cocostarc",
+							"description": "Inserting password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/verifyLogin",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create/Register User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Arthasasas",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "arthasthelichking@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testpassword",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "November",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Arthas",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Lich",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Blizzard",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "George Enescu",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "Teilor",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Romania",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "720219",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Botosani",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Botosani",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "0701512345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/createAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Method to Delete User Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "arthasthelichking@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testpassword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/deleteAccount",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"deleteAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Method to update User Accounnt",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://automationexercise.com/api/updateAccount?name=Arthasasas&email=arthasthelichking@gmail.com&password=testpassword&title=Mr&birth_date=13&birth_month=November&birth_year=2000&firstname=Arthas&lastname=Lich&company=Blizzard&address1=George Enescu&address2=Teilor&country=Romania&zipcode=720249&state=Botosani&city=Botosani&mobile_number=0701512345",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"updateAccount"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Arthasasas"
+						},
+						{
+							"key": "email",
+							"value": "arthasthelichking@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "testpassword"
+						},
+						{
+							"key": "title",
+							"value": "Mr"
+						},
+						{
+							"key": "birth_date",
+							"value": "13"
+						},
+						{
+							"key": "birth_month",
+							"value": "November"
+						},
+						{
+							"key": "birth_year",
+							"value": "2000"
+						},
+						{
+							"key": "firstname",
+							"value": "Arthas"
+						},
+						{
+							"key": "lastname",
+							"value": "Lich"
+						},
+						{
+							"key": "company",
+							"value": "Blizzard"
+						},
+						{
+							"key": "address1",
+							"value": "George Enescu"
+						},
+						{
+							"key": "address2",
+							"value": "Teilor"
+						},
+						{
+							"key": "country",
+							"value": "Romania"
+						},
+						{
+							"key": "zipcode",
+							"value": "720149"
+						},
+						{
+							"key": "state",
+							"value": "Botosani"
+						},
+						{
+							"key": "city",
+							"value": "Botosani"
+						},
+						{
+							"key": "mobile_number",
+							"value": "0701512345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Account Detail by E-MAIL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://automationexercise.com/api/getUserDetailByEmail?email=arthasthelichking@gmail.com",
+					"protocol": "https",
+					"host": [
+						"automationexercise",
+						"com"
+					],
+					"path": [
+						"api",
+						"getUserDetailByEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "arthasthelichking@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
